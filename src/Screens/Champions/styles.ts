@@ -14,20 +14,7 @@ export const ChampionsContainer = styled.main`
     fill: rgb(208, 168, 92);    
 }
 
-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 0;
-        gap: 1rem;
 
-    img{
-        width: 150px;
-        filter: invert(1);
-    }       
-    
-}
 `
 export const HeaderContainer = styled.header`
     position: relative;

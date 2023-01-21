@@ -10,12 +10,14 @@ html{
     @media (max-width:1300px) {
         font-size: 87.5%;
     }
+    
 }
 
 body {
     background-color: rgb(0, 9, 19);
     color: ${props => props.theme.colors["gray-100"]};
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
     
 }
 
@@ -31,5 +33,16 @@ input{
     
 }
 }
+
+::-webkit-scrollbar {
+    width: .4rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background: #006680;
+  }
 
 `

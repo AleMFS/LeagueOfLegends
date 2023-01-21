@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { api } from "../../libs/axios";
-import { BG, BGContainer, ChampionSelectedContainer, ImageChamp } from "./styles";
+import { BgBlur, BGContainer, ChampionSelectedContainer, ImageChamp, InfoChamp, Lore } from "./styles";
 
 
 interface ChampionProps {
@@ -34,15 +34,17 @@ export function ChampionSelected() {
     return (
         <ChampionSelectedContainer>
             <BGContainer>
-                <BG style={{ backgroundImage: `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg)` }}>
-                </BG>
-                <ImageChamp >
+                <BgBlur style={{ backgroundImage: `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg)` }}></BgBlur>
+                <ImageChamp>
                     <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`} alt="" />
-                    <p>AAtrox</p>
                 </ImageChamp>
-
-
+                <InfoChamp>
+                    <strong>{champion.name}</strong>
+                    <span>{champion.title}</span>
+                </InfoChamp>
             </BGContainer>
+
+            
         </ChampionSelectedContainer >
     )
 }
