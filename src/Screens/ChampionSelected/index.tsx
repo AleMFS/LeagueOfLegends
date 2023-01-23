@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams , useLocation} from "react-router-dom";
 import { api } from "../../libs/axios";
+import ScrollToTop from "./components/ScrollTop";
 import { BgBlur, BGContainer, ChampionSelectedContainer, ImageChamp, InfoChamp, Lore } from "./styles";
 
 
@@ -11,6 +12,7 @@ interface ChampionProps {
 
 export function ChampionSelected() {
     const [champion, setChampion] = useState<any>([])
+    const { pathname } = useLocation();
 
     const { id } = useParams()
 
@@ -23,16 +25,21 @@ export function ChampionSelected() {
 
     console.log(champion)
 
+   
+
 
     useEffect(() => {
         getUserProfile()
 
     }, [])
 
+    
+
 
 
     return (
         <ChampionSelectedContainer>
+            <ScrollToTop />
             <BGContainer>
                 <BgBlur style={{ backgroundImage: `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg)` }}></BgBlur>
                 <ImageChamp>
@@ -44,7 +51,7 @@ export function ChampionSelected() {
                 </InfoChamp>
             </BGContainer>
 
-            
+
         </ChampionSelectedContainer >
     )
 }
