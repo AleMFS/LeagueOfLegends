@@ -33,9 +33,6 @@ export function ChampionSelected() {
 
     }, [])
 
-    
-
-
 
     return (
         <ChampionSelectedContainer>
