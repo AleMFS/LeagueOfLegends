@@ -64,30 +64,8 @@ export const ChampionsContent = styled.div`
     padding: 0 1rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns:repeat(9,1fr) ;       
+    grid-template-columns:repeat(auto-fit,minmax(168px, 1fr)) ;       
     gap: 1rem;
-    @media (max-width:1700px) {
-        grid-template-columns: repeat(8,1fr);
-    }
-    @media (max-width:1540px) {
-        grid-template-columns: repeat(7,1fr);
-    }
-    @media (max-width:1340px) {
-        grid-template-columns: repeat(6,1fr);
-    }
-    @media (max-width:1200px) {
-        grid-template-columns: repeat(5,1fr);
-    }
-
-    @media (max-width:1000px) {
-        grid-template-columns: repeat(4,1fr);
-    }
-
-    @media (max-width:780px) {
-        grid-template-columns: repeat(3,1fr);
-    }
-    @media (max-width:590px) {
-        grid-template-columns: repeat(2,1fr);
-    }
+   
 `
 
