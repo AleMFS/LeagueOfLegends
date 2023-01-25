@@ -43,7 +43,7 @@ export const ChampionCardContainer = styled.div`
         
    }
     // IMG
-   @keyframes fadeInBotton {
+    /*@keyframes fadeInBotton {
         0% {
             height: 0;
             opacity: 0;
@@ -52,7 +52,7 @@ export const ChampionCardContainer = styled.div`
             height: 18.75rem;
             opacity: 1;
         }
-    }
+    }*/
 
     // Name
     @keyframes fadeInLeft {

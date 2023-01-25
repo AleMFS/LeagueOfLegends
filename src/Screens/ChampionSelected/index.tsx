@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams , useLocation} from "react-router-dom";
-import { api } from "../../libs/axios";
+import { useParams, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollTop";
 import { BgBlur, BGContainer, ChampionSelectedContainer, ImageChamp, InfoChamp, Lore } from "./styles";
 
@@ -11,8 +10,8 @@ interface ChampionProps {
 }
 
 export function ChampionSelected() {
-    const [champion, setChampion] = useState<any>([])
-    const { pathname } = useLocation();
+    const [champion, setChampion] = useState<any>([]) 
+    const [lerMais, setLermais ] = useState(true)   
 
     const { id } = useParams()
 
@@ -25,7 +24,11 @@ export function ChampionSelected() {
 
     console.log(champion)
 
-   
+    function handleLerMais(){
+        setLermais(!lerMais)
+    }
+
+
 
 
     useEffect(() => {
@@ -47,7 +50,17 @@ export function ChampionSelected() {
                     <span>{champion.title}</span>
                 </InfoChamp>
             </BGContainer>
+            <Lore>
+                <div className="loreInfo">
+                    <h4>Lore</h4>
+                    {lerMais? 
+                    <p>{`${champion.blurb} `}<button onClick={handleLerMais}>ler mais</button> </p>   
+                    :
+                    <p>{`${champion.lore} `}<button onClick={handleLerMais}> ler menos</button></p> 
+                }
+                </div>
 
+            </Lore>
 
         </ChampionSelectedContainer >
     )

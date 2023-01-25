@@ -3,7 +3,7 @@ import { ChampionSelected } from "../../ChampionSelected";
 import { ChampionCardContainer } from "./styles";
 
 interface ChampionProps {
-    champion?: string
+    champion: string
     name:string
 }
 

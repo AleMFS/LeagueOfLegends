@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ChampionSelectedContainer = styled.section`
         display: flex;
         flex-direction: column;
-    
+        padding: 0 1rem;
     `
 
 export const BGContainer = styled.div`  
@@ -46,6 +46,8 @@ export const ImageChamp = styled.div`
        transform: translate(-50%);
        background-position: center;
        -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0) 98%);
+       object-fit: cover;
+       object-position: 70%;
        
        
        
@@ -74,6 +76,7 @@ export const InfoChamp = styled.section`
        display: flex;
        flex-direction: column;
        align-items: center;
+       
        bottom: 7vh;
        left: 50%;
        transform: translate(-50%);
@@ -83,12 +86,14 @@ export const InfoChamp = styled.section`
        
        
        
+       
         
 
         strong{
             font-size: 6.25rem;        
             text-transform: uppercase;
             color: #FFF;
+            text-align: center;
         }
         span{
             font-size: 1.5rem;        
@@ -103,8 +108,52 @@ export const InfoChamp = styled.section`
        }
     `
 
-export const Lore = styled.div`    
+export const Lore = styled.section`    
         width: 100%;
-        margin:  6rem auto;
-        max-width: 700px;
+        max-width: 1000px;
+        margin:  0 auto;        
+        border: 1px solid #a9934e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        border-top: none;
+        border-radius: 10px;
+        margin-top: 2rem;
+       
+
+
+        .loreInfo{
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            gap: 2rem;
+            
+            
+
+            h4{
+                font-size: 3rem;
+                color: #a9934e;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+            button{
+                color: #a9934e;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+
+                :hover{
+                   opacity: 0.7;
+                }
+            }
+
+
+           
+        }
     `

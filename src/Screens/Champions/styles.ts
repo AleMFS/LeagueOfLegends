@@ -42,6 +42,10 @@ export const HeaderContainer = styled.header`
 `
 
 export const Search = styled.input`
+     position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
     width: 50%;
     min-width: 50%;
     margin:2rem auto;
@@ -64,8 +68,9 @@ export const ChampionsContent = styled.div`
     padding: 0 1rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(168px, 1fr)) ;       
+    grid-template-columns:repeat(auto-fit,minmax(168px, 250px)) ;       
     gap: 1rem;
+    justify-content: center;
    
 `
 
