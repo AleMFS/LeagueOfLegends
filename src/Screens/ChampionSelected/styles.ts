@@ -186,6 +186,11 @@ export const Carrosel = styled.div`
         max-height: 39.625rem;
         overflow: hidden;
 
+        button{
+        background: transparent;
+        border: none;
+      }
+
         @media(max-width:1160px){
             display: flex;
             flex-direction: row;
@@ -200,6 +205,8 @@ export const SkinSelected = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      
        
       img{
         width: 100%;      

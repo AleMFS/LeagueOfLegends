@@ -25,6 +25,7 @@ export function ChampionSelected() {
     const [champion, setChampion] = useState<ChampionProps | null>(null);
     const [skins, setSkins] = useState<SkinProps[]>([]);
     const [lerMais, setLermais] = useState(true)
+    const [skinSelected, setSkinSelected] = useState('0')
 
     const { id } = useParams()
 
@@ -38,14 +39,12 @@ export function ChampionSelected() {
         setSkins(dataSkins)
     }
 
-
+    
 
     function handleLerMais() {
         setLermais(!lerMais)
     }
-
-
-
+   
 
     useEffect(() => {
         getUserProfile()
@@ -81,13 +80,15 @@ export function ChampionSelected() {
                 <Carrosel>
                     {skins.map((skin) => (
                         <div key={skin.id}>
-                            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`} alt=""  />
+                            <button  onClick={() => setSkinSelected(`${skin.num}`)}>
+                                <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`} alt="" />
+                            </button>
                         </div>
                     ))}
                 </Carrosel>
 
                 <SkinSelected>
-                    <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${0}.jpg`} alt="" />                    
+                    <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skinSelected}.jpg`} alt="" />
 
                 </SkinSelected>
 
