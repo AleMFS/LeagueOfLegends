@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const ChampionSelectedContainer = styled.section`
         display: flex;
         flex-direction: column;
-        padding: 0 1rem;
+        
+       
+        
     `
 
 export const BGContainer = styled.div`  
@@ -56,7 +58,7 @@ export const ImageChamp = styled.div`
 
        @media (max-width:1000px){
         img{
-            max-width :70rem ;
+            max-width :80%;
             height: 70%;
         }
        }
@@ -110,8 +112,8 @@ export const InfoChamp = styled.section`
 
 export const Lore = styled.section`    
         width: 100%;
-        max-width: 1000px;
-        margin:  0 auto;        
+        max-width: 62.5rem;
+        margin:  0 auto 1rem;        
         border: 1px solid #a9934e;
         display: flex;
         align-items: center;
@@ -125,7 +127,7 @@ export const Lore = styled.section`
 
         .loreInfo{
             width: 100%;
-            max-width: 600px;
+            max-width: 37.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -152,8 +154,59 @@ export const Lore = styled.section`
                    opacity: 0.7;
                 }
             }
-
-
            
         }
+    `
+export const Skins = styled.div`
+        width: 100%;
+        max-width: 81.25rem;
+        margin: 0 auto;
+        border: 1px solid white;        
+        overflow-y: hidden;
+        padding:  0.5rem;
+
+        display: grid;
+        grid-template-columns: 12.5rem auto;
+        gap: 0.5rem;
+        
+        img{
+           width: 12.5rem ;
+        }
+ 
+        @media(max-width:1160px){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    `
+
+export const Carrosel = styled.div`
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-height: 39.625rem;
+        overflow: hidden;
+
+        @media(max-width:1160px){
+            display: flex;
+            flex-direction: row;
+            overflow-x: hidden;
+           
+        }
+        
+    `
+export const SkinSelected = styled.div`
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       
+      img{
+        width: 100%;      
+        max-height : 100% ;
+       object-fit :contain ;
+      }
+
+     
+        
     `

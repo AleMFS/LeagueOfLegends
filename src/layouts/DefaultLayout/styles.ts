@@ -8,6 +8,9 @@ export const LayoutContainer = styled.div`
     flex-direction: column;
     
    
-        
+    @media (max-width:1000px){
+            padding: 0 1rem;
+            
+        }    
  
 `

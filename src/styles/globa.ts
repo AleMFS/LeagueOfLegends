@@ -11,6 +11,10 @@ html{
         font-size: 87.5%;
     }
     
+    @media (max-width:700px) {
+        font-size: 65.5%;
+    }
+    
 }
 
 body {
