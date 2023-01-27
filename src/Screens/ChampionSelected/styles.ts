@@ -182,13 +182,35 @@ export const Skins = styled.div`
 export const Carrosel = styled.div`
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        
         max-height: 39.625rem;
         overflow: hidden;
+        overflow-x: hidden;        
+        
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            background: transparent;
+
+        &.keen-slider__slide{
+            min-height: none;
+        }
+  }
 
         button{
         background: transparent;
         border: none;
+        transition: all 1s;
+        cursor: pointer;
+
+        :hover{
+            scale: calc(1.02);
+            opacity: 0.7;
+        }
+
+        .ativa{
+        opacity: 0.7;
+      }
       }
 
         @media(max-width:1160px){
@@ -199,21 +221,35 @@ export const Carrosel = styled.div`
         }
         
     `
+
+export const ContainerSkins = styled.div`
+
+`
 export const SkinSelected = styled.div`
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      position: relative;
+  
       
-       
+      
       img{
         width: 100%;      
         max-height : 100% ;
-       object-fit :contain ;
+       object-fit :contain ;       
+      
+
+      }
+      span{
+        position: absolute;
+        bottom: 5px;
+        font-size: 3rem;
+        text-shadow: 0px 2px 11px #000000;
+        
       }
 
-     
+      
         
     `
