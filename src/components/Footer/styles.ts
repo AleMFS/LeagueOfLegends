@@ -5,12 +5,20 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 7rem 0 2rem;
     gap: 1rem;
 
     img{
         width: 150px;
         filter: invert(1);
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    span{
+        font-size: 1.5rem;
     }
 `
 

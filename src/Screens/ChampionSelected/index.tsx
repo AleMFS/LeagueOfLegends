@@ -31,7 +31,7 @@ export function ChampionSelected() {
     const { id } = useParams();
 
 
-    const [sliderRef, instanceRef] = useKeenSlider(
+    const [sliderRef] = useKeenSlider(
         {
             loop: false,
             slides: {
@@ -64,15 +64,9 @@ export function ChampionSelected() {
 
         setIndexSelected(index)
         setSkinSelected(number)
-
-
-
     }
 
-
-
-
-    function handleLerMais() {
+    function handleRead() {
         setLermais(!lerMais)
     }
 
@@ -102,9 +96,9 @@ export function ChampionSelected() {
                         <div className="loreInfo">
                             <h4>Lore</h4>
                             {lerMais ?
-                                <p>{`${champion?.blurb} `}<button onClick={handleLerMais}>ler mais</button> </p>
+                                <p>{`${champion?.blurb} `}<button onClick={handleRead}>ler mais</button> </p>
                                 :
-                                <p>{`${champion?.lore} `}<button onClick={handleLerMais}>ler menos</button></p>
+                                <p>{`${champion?.lore} `}<button onClick={handleRead}>ler menos</button></p>
                             }
                         </div>
 

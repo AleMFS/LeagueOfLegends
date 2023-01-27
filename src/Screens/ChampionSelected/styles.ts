@@ -155,13 +155,17 @@ export const Lore = styled.section`
                 }
             }
            
+            @media (max-width:700px){
+                margin-top: -400px;
+                z-index: 6;
+            }
         }
     `
 export const Skins = styled.div`
         width: 100%;
         max-width: 81.25rem;
         margin: 0 auto;
-        border: 1px solid white;        
+        border: 1px solid #a9934e;        
         overflow-y: hidden;
         padding:  0.5rem;
 
@@ -245,8 +249,10 @@ export const SkinSelected = styled.div`
       span{
         position: absolute;
         bottom: 5px;
-        font-size: 3rem;
-        text-shadow: 0px 2px 11px #000000;
+        font-size: 3rem;      
+        text-shadow: 0px -4px 10px #000000;
+        -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
         
       }
 
