@@ -48,6 +48,7 @@ export function ChampionSelected() {
                 }
             }
 
+            
         })
 
     async function getUserProfile() {
