@@ -32,12 +32,14 @@ export const TagsContainer = styled.div`
             }
         }
 
-    @media (max-width:490px){
+   
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 600px) {
         gap: 0.5rem;
 
-        label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
-        }
-    }
+label{
+    padding: 0.5rem;
+    font-size: 0.65rem;
+}
+  }
+
 `
