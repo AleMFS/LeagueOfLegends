@@ -68,6 +68,13 @@ export const ImageChamp = styled.div`
             height: 60%;
         }
        }
+       @media (max-width:500px){
+        img{
+            max-width: 100%;
+            object-position: 67%;
+            
+        }
+       }
 
         
      
@@ -271,6 +278,19 @@ export const SkinSelected = styled.div`
         
       }
 
-      
+     
+
+      @media (max-width:500px){
+
+        span{
+            font-size: 2.2rem;
+        }
+      }
+      @media (max-width:380px){
+        
+        span{
+            font-size: 2rem;
+        }
+      }
         
     `
