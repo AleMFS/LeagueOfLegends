@@ -45,7 +45,7 @@ export const HeaderContainer = styled.header`
     height: 100%;
 
     object-fit: cover;
-    object-position: 100% 50%;
+    object-position: 90% 50%;
 }
 
 .logo{
