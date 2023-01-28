@@ -88,7 +88,7 @@ export function Champions() {
 
 
     async function fetchChampions() {
-        const response = await axios.get<{ data: { [key: string]: Champion } }>(`http://ddragon.leagueoflegends.com/cdn/${version}/data/pt_BR/champion.json`)
+        const response = await axios.get<{ data: { [key: string]: Champion } }>(`https://ddragon.leagueoflegends.com/cdn/${version}/data/pt_BR/champion.json`)
         const champions = Object.values(response.data.data)
         const sortedChampions = champions.sort((a, b) => {
             if (a.name < b.name) {

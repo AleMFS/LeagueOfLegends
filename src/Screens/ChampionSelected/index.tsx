@@ -51,7 +51,7 @@ export function ChampionSelected() {
         })
 
     async function getUserProfile() {
-        const response = await fetch(`http://ddragon.leagueoflegends.com/cdn/${version}/data/pt_BR/champion/${id}.json`)
+        const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/pt_BR/champion/${id}.json`)
         const data: any = await response.json()
             .then(champion => Object.entries(champion.data)[0][1])
         const dataSkins = await data.skins
