@@ -48,11 +48,11 @@ export const TagsContainer = styled.div`
     and (device-height: 844px) 
     and (-webkit-device-pixel-ratio: 3) {
 
-        gap: 0.5rem;
+        gap: 0.1rem;
 
         label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
+            padding: 0.3rem;
+            font-size: 0.40rem;
         }
      }
 
@@ -61,11 +61,11 @@ export const TagsContainer = styled.div`
     and (device-height: 926px) 
     and (-webkit-device-pixel-ratio: 3) {
 
-        gap: 0.5rem;
+        gap: 0.1rem;
 
         label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
+            padding: 0.3rem;
+            font-size: 0.40rem;
         }
      }
 
@@ -74,11 +74,11 @@ export const TagsContainer = styled.div`
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 2) {
 
-        gap: 0.5rem;
+        gap: 0.1rem;
 
         label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
+            padding: 0.3rem;
+            font-size: 0.40rem;
         }
      }
 
@@ -87,11 +87,11 @@ export const TagsContainer = styled.div`
     and (device-height: 812px) 
     and (-webkit-device-pixel-ratio: 3) {
 
-        gap: 0.5rem;
+        gap: 0.1rem;
 
         label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
+            padding: 0.3rem;
+            font-size: 0.40rem;
         }
      }
 
@@ -100,11 +100,11 @@ export const TagsContainer = styled.div`
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 3) {
 
-        gap: 0.5rem;
+        gap: 0.1rem;
 
         label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
+            padding: 0.3rem;
+            font-size: 0.40rem;
         }
      }
 
@@ -113,23 +113,23 @@ export const TagsContainer = styled.div`
     and (device-height: 844px)
     and (-webkit-device-pixel-ratio: 3) { 
 
-        gap: 0.5rem;
+    gap: 0.1rem;
 
-        label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
-        }
+label{
+    padding: 0.3rem;
+    font-size: 0.40rem;
+}
     }
 
     @media only screen
     and (width: 393px) 
     and (device-height: 852px)
     and (-webkit-device-pixel-ratio: 3) { 
-        gap: 0.5rem;
+        gap: 0.1rem;
 
         label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
+            padding: 0.3rem;
+            font-size: 0.40rem;
         }
     }
 
@@ -137,13 +137,12 @@ export const TagsContainer = styled.div`
     and (device-width: 430px) 
     and (device-height: 932px) 
     and (-webkit-device-pixel-ratio: 3) {
-        gap: 0.5rem;
+        gap: 0.1rem;
 
         label{
-            padding: 0.5rem;
-            font-size: 0.65rem;
+            padding: 0.3rem;
+            font-size: 0.40rem;
         }
-     }
-
+    }
 
 `
