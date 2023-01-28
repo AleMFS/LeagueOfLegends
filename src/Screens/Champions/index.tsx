@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ChampionCard } from "./components/ChampionCard";
 import TristanaV from '../../assets/Tristana.webm'
-import TristanaMob from '../../assets/Tristanamobile.gif'
+import TristanaMob from '../../assets/TristanaMobile.gif'
 import LOL from '../../assets/LOL.png'
 import axios from 'axios';
 
