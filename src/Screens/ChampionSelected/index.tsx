@@ -83,9 +83,9 @@ export function ChampionSelected() {
                 <>
                     <ScrollToTop />
                     <BGContainer>
-                        <BgBlur style={{ backgroundImage: `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg)` }}></BgBlur>
+                        <BgBlur style={{ backgroundImage: `url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg)` }}></BgBlur>
                         <ImageChamp>
-                            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`} alt="" />
+                            <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`} alt="" />
                         </ImageChamp>
                         <InfoChamp>
                             <strong>{champion?.name}</strong>
@@ -108,7 +108,7 @@ export function ChampionSelected() {
                             {skins.map((skin, index) => (
                                 <ContainerSkins key={skin.id} className="keen-slider__slide"  >
                                     <button onClick={() => handleSelected(skin.num, index)}>
-                                        <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`} alt="" />
+                                        <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`} alt="" />
                                     </button>
 
 

@@ -85,14 +85,10 @@ export const ChampionCardContainer = styled.div`
     img{
         width: 100%;
         height: 9.75rem;
-        object-position: top ;
-        object-fit: cover;
-        animation: fadeInBotton 1.5s ease 0.5s forwards;
-        width: 1;
-        overflow: hidden;
+      
    }
   }  
-
+  
    
  
     

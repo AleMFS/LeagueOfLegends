@@ -13,8 +13,7 @@ export function SearchTags({ search }: FunctionSearch) {
         setSelectedOption(e)
         search(e)
     }
-    console.log(selectedOption)
-
+   
     return (
         <SearchTagsContainer>
             <TagsContainer>
