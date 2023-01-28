@@ -34,6 +34,7 @@ export const TagsContainer = styled.div`
 
     @media (max-width:490px){
         gap: 0.5rem;
+        
 
         label{
             padding: 0.5rem;
@@ -52,7 +53,7 @@ export const TagsContainer = styled.div`
 
         label{
             padding: 0.3rem;
-            font-size: 0.40rem;
+            font-size: 6px;
         }
      }
 
@@ -64,8 +65,9 @@ export const TagsContainer = styled.div`
         gap: 0.1rem;
 
         label{
+
             padding: 0.3rem;
-            font-size: 0.40rem;
+            font-size: 6px;
         }
      }
 
@@ -77,8 +79,9 @@ export const TagsContainer = styled.div`
         gap: 0.1rem;
 
         label{
+
             padding: 0.3rem;
-            font-size: 0.40rem;
+            font-size: 6px;
         }
      }
 
@@ -90,8 +93,9 @@ export const TagsContainer = styled.div`
         gap: 0.1rem;
 
         label{
+
             padding: 0.3rem;
-            font-size: 0.40rem;
+            font-size: 6px;
         }
      }
 
@@ -103,8 +107,9 @@ export const TagsContainer = styled.div`
         gap: 0.1rem;
 
         label{
+
             padding: 0.3rem;
-            font-size: 0.40rem;
+            font-size: 6px;
         }
      }
 
@@ -116,8 +121,9 @@ export const TagsContainer = styled.div`
     gap: 0.1rem;
 
 label{
+
     padding: 0.3rem;
-    font-size: 0.40rem;
+    font-size: 6px;
 }
     }
 
@@ -128,8 +134,9 @@ label{
         gap: 0.1rem;
 
         label{
+
             padding: 0.3rem;
-            font-size: 0.40rem;
+            font-size: 6px;
         }
     }
 
@@ -140,8 +147,9 @@ label{
         gap: 0.1rem;
 
         label{
+
             padding: 0.3rem;
-            font-size: 0.40rem;
+            font-size: 6px;
         }
     }
 
