@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import BeaufortforLOLBold from '../../src/assets/BeaufortforLOL.ttf';
 
 export const GlobalStyle = createGlobalStyle`
 *{
@@ -6,6 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+      font-family: 'BeaufortforLOL-Bold';
+      src: url(${BeaufortforLOLBold}) format('truetype');
+    }
 html{
     @media (max-width:1300px) {
         font-size: 87.5%;

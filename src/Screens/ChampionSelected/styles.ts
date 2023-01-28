@@ -188,15 +188,16 @@ export const Skins = styled.div`
         @media(max-width:1160px){
             display: flex;
             flex-direction: column-reverse;
+           
         }
     `
 
 export const Carrosel = styled.div`
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;       
         max-height: 39.625rem;
-        overflow: hidden;
+        
+        overflow: auto;
         overflow-x: hidden;        
         
         ::-webkit-scrollbar {
@@ -227,14 +228,20 @@ export const Carrosel = styled.div`
 
         @media(max-width:1160px){
             display: flex;
-            flex-direction: row;
-            overflow-x: hidden;
+            flex-direction: row;                      
+            overflow: hidden;
            
         }
+        @media (min-width:1175px){
+            height :634px ;
+        }
+     
         
     `
 
 export const ContainerSkins = styled.div`
+    
+    
 
 `
 export const SkinSelected = styled.div`

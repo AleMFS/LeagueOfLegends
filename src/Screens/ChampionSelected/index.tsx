@@ -30,26 +30,32 @@ export function ChampionSelected() {
     const [indexSelected, setIndexSelected] = useState(0);
     const { id } = useParams();
 
-
+    
+    
     const [sliderRef] = useKeenSlider(
         {
-            loop: false,
-            slides: {
-                perView: 'auto'
-            },
-            vertical: true,
-            breakpoints: {
-                '(max-width:1160px)': {
-                    loop: false,
-                    slides: {
-                        perView: 'auto'
+            breakpoints:{
+                '(max-width:1159px)':{
+                    loop:false,
+                    slides:{
+                        perView:'auto'
+                    },                
+                }, 
+                '(min-width:1170px)':{
+                    loop:false,
+                    slides:{
+                        perView: 5.2
                     },
-                    vertical: false
-                }
-            }
-
+                    vertical:true
+                }            
+                
+            },
             
-        })
+           
+           
+        }
+    );
+    
 
     async function getUserProfile() {
         const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/pt_BR/champion/${id}.json`)
@@ -75,7 +81,8 @@ export function ChampionSelected() {
     useEffect(() => {
         getUserProfile()
 
-    }, [])
+        
+    }, [sliderRef])
 
 
     return (

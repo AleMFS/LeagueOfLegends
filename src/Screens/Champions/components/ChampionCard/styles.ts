@@ -5,7 +5,7 @@ export const ChampionCardContainer = styled.div`
     min-width: 11rem;
     display:flex ;
     flex-direction: column; 
-    transition: 0.5s ease-in-out ;
+   
     cursor: pointer;
     
     a{
@@ -65,6 +65,7 @@ export const ChampionCardContainer = styled.div`
 
    &:hover{
    transform: scale3d(1.05, 1.05, 1);
+   transition: 0.75s ease-in-out ;
     
 
     div{
