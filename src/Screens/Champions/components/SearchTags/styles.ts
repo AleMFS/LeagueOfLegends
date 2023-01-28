@@ -43,114 +43,64 @@ export const TagsContainer = styled.div`
     }
     
   // iphone responsivity
+  @media only screen and (max-device-width: 320px)  and (-webkit-device-pixel-ratio: 1) ,
+        
+        /* iphone 4 */
+         only screen and (max-device-width: 320px)  and (-webkit-device-pixel-ratio: 2), 
+        
+        /* iphone 5 */
+         only screen and (max-device-width: 320px)   and (-webkit-device-pixel-ratio: 2), 
+        
+        /* iphone 6, 6s, 7, 8 */
+         only screen and (max-device-width: 375px)  and (-webkit-device-pixel-ratio: 2), 
+            
+        /* iphone 6+, 6s+, 7+, 8+ */
+         only screen and (max-device-width: 414px)   and (-webkit-device-pixel-ratio: 3), 
+        
+        /* iphone X , XS, 11 Pro, 12 Mini */
+         only screen and (max-device-width: 375px)   and (-webkit-device-pixel-ratio: 3), 
 
-    @media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
+        /* iphone 12, 12 Pro */
+         only screen and (max-device-width: 390px)   and (-webkit-device-pixel-ratio: 3), 
+       
+        /* iphone XR, 11 */
+         only screen and (max-device-width: 414px)   and (-webkit-device-pixel-ratio: 2), 
+            
+        /* iphone XS Max, 11 Pro Max */
+         only screen and (max-device-width: 414px)  and (-webkit-device-pixel-ratio: 3), 
 
-        gap: 0.1rem;
+        /* iphone 12 Pro Max */
+         only screen and (max-device-width: 428px)  and (-webkit-device-pixel-ratio: 3),
 
-        label{
-            padding: 0.3rem;
+         /*iPhone 13 maxi*/
+         only screen and (max-device-width: 375px)and  (-webkit-device-pixel-ratio: 3) ,
+
+         /*iPhone 13 Pro Max*/
+          only screen and (max-device-width: 390px)and  (-webkit-device-pixel-ratio: 3),
+
+          /*iPhone 13 */
+           only screen and (max-device-width: 428px)and  (-webkit-device-pixel-ratio: 3),
+
+        /*iPhone 14 Pro*/
+         only screen and (max-device-width: 390px) and  (-webkit-device-pixel-ratio: 3) ,
+
+        /*iPhone 14 Pro*/
+         only screen and (max-device-width: 393px)and  (-webkit-device-pixel-ratio: 3) ,
+
+        /*iPhone 14 Pro Max*/
+          screen and (max-device-width: 430px)and  (-webkit-device-pixel-ratio: 3){
+            gap: 0.2rem;
+
+            label{
+            padding: 0.4rem;
             font-size: 6px;
+            }
         }
-     }
+       
 
-    @media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px) 
-    and (-webkit-device-pixel-ratio: 3) {
+         
 
-        gap: 0.1rem;
 
-        label{
 
-            padding: 0.3rem;
-            font-size: 6px;
-        }
-     }
-
-    @media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) {
-
-        gap: 0.1rem;
-
-        label{
-
-            padding: 0.3rem;
-            font-size: 6px;
-        }
-     }
-
-    @media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) {
-
-        gap: 0.1rem;
-
-        label{
-
-            padding: 0.3rem;
-            font-size: 6px;
-        }
-     }
-
-    @media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 3) {
-
-        gap: 0.1rem;
-
-        label{
-
-            padding: 0.3rem;
-            font-size: 6px;
-        }
-     }
-
-     @media only screen
-    and (width: 390px) 
-    and (device-height: 844px)
-    and (-webkit-device-pixel-ratio: 3) { 
-
-    gap: 0.1rem;
-
-label{
-
-    padding: 0.3rem;
-    font-size: 6px;
-}
-    }
-
-    @media only screen
-    and (width: 393px) 
-    and (device-height: 852px)
-    and (-webkit-device-pixel-ratio: 3) { 
-        gap: 0.1rem;
-
-        label{
-
-            padding: 0.3rem;
-            font-size: 6px;
-        }
-    }
-
-    @media only screen
-    and (device-width: 430px) 
-    and (device-height: 932px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        gap: 0.1rem;
-
-        label{
-
-            padding: 0.3rem;
-            font-size: 6px;
-        }
-    }
-
+    
 `

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ChampionCard } from "./components/ChampionCard";
-import Teaser from '../../assets/Tristana.mp4'
+import TristanaMob from '../../assets/Tristana.webm'
 import LOL from '../../assets/LOL.png'
 import axios from 'axios';
 
@@ -112,8 +112,9 @@ export function Champions() {
     return (
         <ChampionsContainer>
             <HeaderContainer>
-                <video src={Teaser} loop muted autoPlay > </video>
-                <img src={LOL} alt="" />
+                
+                <video src={TristanaMob} autoPlay loop muted className="mobile"> </video> 
+                <img src={LOL} alt=""  className="logo"/>
             </HeaderContainer>
             <SearchTags search={handlesearchTags} />           
             <Search

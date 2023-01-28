@@ -44,7 +44,7 @@ export function SearchTags({ search }: FunctionSearch) {
                     />
                     ATIRADORES
                 </label>
-                <label className={selectedOption === 'Fighter' ? 'active' : ''}>
+                <label className={selectedOption === 'Fighter' ? 'active' : ''}>    
                     <input
                         type="radio"
                         value="Fighter"

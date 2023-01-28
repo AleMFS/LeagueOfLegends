@@ -38,7 +38,17 @@ export const HeaderContainer = styled.header`
     object-fit: cover;
     object-position: 100% 50%;
 }
-img{
+/*.mobile{
+    
+    z-index: 1;
+    width: 100vw;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 100% 50%;
+}*/
+
+.logo{
     width: 25rem;
     position: absolute;
     top: 0;
@@ -47,6 +57,8 @@ img{
     filter: drop-shadow(8px 8px 15px #000);
     
 }
+
+
       
 `
 
