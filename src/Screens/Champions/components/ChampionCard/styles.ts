@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const ChampionCardContainer = styled.div`
-    width:100% ;
-    
+    width:100% ;    
     min-width: 11rem;
     display:flex ;
     flex-direction: column; 
@@ -37,10 +36,7 @@ export const ChampionCardContainer = styled.div`
         animation: fadeInLeft 0.5s ease 0.5s forwards;
         width: 1;
         overflow: hidden;
-        letter-spacing: 0.08em;
-        
-        
-        
+        letter-spacing: 0.08em;    
    }
     // IMG
     /*@keyframes fadeInBotton {
@@ -82,6 +78,22 @@ export const ChampionCardContainer = styled.div`
     
    }
 
+   
+  @media (max-width: 1000px){
+    width: 20%;
+    
+    img{
+        width: 100%;
+        height: 9.75rem;
+        object-position: top ;
+        object-fit: cover;
+        animation: fadeInBotton 1.5s ease 0.5s forwards;
+        width: 1;
+        overflow: hidden;
+   }
+  }  
+
+   
  
     
 `

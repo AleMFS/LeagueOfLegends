@@ -30,13 +30,22 @@ export const HeaderContainer = styled.header`
     margin: 0px auto;
 
     video{
-    position: relative;
+    
     z-index: 1;
     width: 100vw;
     height: 100%;
 
     object-fit: cover;
     object-position: 100% 50%;
+}
+img{
+    width: 25rem;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 2;
+    filter: drop-shadow(8px 8px 15px #000);
+    
 }
       
 `
@@ -68,9 +77,19 @@ export const ChampionsContent = styled.div`
     padding: 0 1rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(168px, 250px)) ;       
+    grid-template-columns:repeat(auto-fit,minmax(100px, 250px)) ;       
     gap: 1rem;
     justify-content: center;
+
+   @media (max-width:1000px){
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    
+   }
    
 `
 

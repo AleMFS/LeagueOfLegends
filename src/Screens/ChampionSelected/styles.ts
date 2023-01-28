@@ -78,7 +78,7 @@ export const InfoChamp = styled.section`
        display: flex;
        flex-direction: column;
        align-items: center;
-       
+       color: #FFF;
        bottom: 7vh;
        left: 50%;
        transform: translate(-50%);
@@ -134,6 +134,7 @@ export const Lore = styled.section`
             align-items: center;
             padding: 2rem;
             gap: 2rem;
+            color: #FFF;
             
             
 
@@ -143,6 +144,7 @@ export const Lore = styled.section`
             }
             p{
                 font-size: 1.25rem;
+                
             }
             button{
                 color: #a9934e;
@@ -155,11 +157,17 @@ export const Lore = styled.section`
                 }
             }
            
-            @media (max-width:700px){
-                margin-top: -400px;
-                z-index: 6;
-            }
+           
         }
+
+        @media (max-width:700px){
+                margin-top: -12.5rem;
+                z-index: 6;
+                border: none;
+
+                
+                
+            }
     `
 export const Skins = styled.div`
         width: 100%;
@@ -252,7 +260,7 @@ export const SkinSelected = styled.div`
         font-size: 3rem;      
         text-shadow: 0px -4px 10px #000000;
         -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
+        -webkit-text-stroke-color: #000;
         
       }
 

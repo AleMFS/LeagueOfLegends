@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { ChampionSelected } from "../../ChampionSelected";
+import { ChampionSelected } from "../../../ChampionSelected";
 import { ChampionCardContainer } from "./styles";
 
 interface ChampionProps {
