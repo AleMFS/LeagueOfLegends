@@ -38,15 +38,15 @@ export const HeaderContainer = styled.header`
     object-fit: cover;
     object-position: 100% 50%;
 }
-/*.mobile{
-    
+.mobile{
+    display: none;
     z-index: 1;
     width: 100vw;
     height: 100%;
 
     object-fit: cover;
     object-position: 100% 50%;
-}*/
+}
 
 .logo{
     width: 25rem;
@@ -56,6 +56,16 @@ export const HeaderContainer = styled.header`
     z-index: 2;
     filter: drop-shadow(8px 8px 15px #000);
     
+}
+
+@media (max-width:800px){
+
+    video{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
 }
 
 
