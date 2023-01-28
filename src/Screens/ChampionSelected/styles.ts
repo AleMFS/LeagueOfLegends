@@ -204,7 +204,7 @@ export const Carrosel = styled.div`
         flex-direction: column;       
         max-height: 39.625rem;
         
-        overflow: auto;
+        overflow: hidden;
         overflow-x: hidden;        
         
         ::-webkit-scrollbar {
