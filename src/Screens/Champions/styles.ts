@@ -51,7 +51,7 @@ img{
 `
 
 export const Search = styled.input`
-     position: sticky;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 5;
@@ -61,14 +61,22 @@ export const Search = styled.input`
     display: flex;
     background-color: #006680;
     border: none;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
     color: #FFF;
 
     &::placeholder{
         color: #FFF;
     }
+    :focus{
+      outline:  0;
+      box-shadow: 3px 3px 10px #005A82, 0px 0px 10px #0AC8B9;
+    :focus::-webkit-input-placeholder {
+   color: transparent;
+}
 
+};
+    
 
 `
 

@@ -112,21 +112,20 @@ export function Champions() {
     return (
         <ChampionsContainer>
             <HeaderContainer>
-                <video src={Teaser} loop muted autoPlay> </video>
+                <video src={Teaser} loop muted autoPlay > </video>
                 <img src={LOL} alt="" />
             </HeaderContainer>
-            <SearchTags search={handlesearchTags} />
+            <SearchTags search={handlesearchTags} />           
             <Search
                 type="text"
-                placeholder="Procure pelo campeão"
+                placeholder={`Busque aqui seu campeão `}
                 value={searchChampion}
                 onChange={e => handlesearchChampion(e.target.value)}
 
             />
 
-
             <ChampionsContent>
-            {(championsTag.length > 0 ? (searchChampion === '' ? championsTag : allChampions) : (searchChampion === '' ? champion : allChampions))
+                {(championsTag.length > 0 ? (searchChampion === '' ? championsTag : allChampions) : (searchChampion === '' ? champion : allChampions))
                     .filter(card => card.id)
                     .map((card: Champion) => (
                         <ChampionCard key={card.id} champion={card.id} name={card.name} />

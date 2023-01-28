@@ -35,6 +35,15 @@ export function SearchTags({ search }: FunctionSearch) {
                     />
                     ASSASSINOS
                 </label>
+                <label className={selectedOption === 'Marksman' ? 'active' : ''}>
+                    <input
+                        type="radio"
+                        value="Marksman"
+                        checked={selectedOption === 'Marksman'}
+                        onChange={(e) => handleSearchForTags(e.target.value)}
+                    />
+                    ATIRADORES
+                </label>
                 <label className={selectedOption === 'Fighter' ? 'active' : ''}>
                     <input
                         type="radio"
@@ -54,15 +63,7 @@ export function SearchTags({ search }: FunctionSearch) {
                     />
                     MAGOS
                 </label>
-                <label className={selectedOption === 'Marksman' ? 'active' : ''}>
-                    <input
-                        type="radio"
-                        value="Marksman"
-                        checked={selectedOption === 'Marksman'}
-                        onChange={(e) => handleSearchForTags(e.target.value)}
-                    />
-                    ATIRADORES
-                </label>
+                
                 <label className={selectedOption === 'Support' ? 'active' : ''}>
                     <input
                         type="radio"
