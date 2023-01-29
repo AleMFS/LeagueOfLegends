@@ -339,7 +339,7 @@ input{
       
 `,My=Re.div`
     position: sticky;
-    top: 0;
+    top: 1rem;
     left: 0;
     z-index: 5;
     width: 50%;
