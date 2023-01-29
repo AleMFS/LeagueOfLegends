@@ -83,7 +83,7 @@ export const Search = styled.div`
     top: 1rem;
     left: 0;
     z-index: 5;
-    width: 70%;
+    width: 50%;
     min-width: 50%;
     margin:2rem auto;
     display: flex;
@@ -121,6 +121,7 @@ export const Search = styled.div`
     
    
     @media (max-width:600px){
+        width: 70%;
         svg{
             font-size: 10px;
         }
