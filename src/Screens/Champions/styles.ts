@@ -83,7 +83,7 @@ export const Search = styled.div`
     top: 1rem;
     left: 0;
     z-index: 5;
-    width: 50%;
+    width: 70%;
     min-width: 50%;
     margin:2rem auto;
     display: flex;
