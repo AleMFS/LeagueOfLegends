@@ -29,6 +29,7 @@ export function ChampionSelected() {
     const [skinSelected, setSkinSelected] = useState(0);
     const [indexSelected, setIndexSelected] = useState(0);
     const { id } = useParams();
+    const [imgClass, setImgClass] = useState("");
 
     
     
@@ -68,9 +69,12 @@ export function ChampionSelected() {
     }
 
     function handleSelected(number: number, index: number) {
-
-        setIndexSelected(index)
-        setSkinSelected(number)
+        setImgClass("fade-out");  // adicione a classe "fade-out" à imagem antes de mudar a imagem
+        setTimeout(() => {  // aguarde um pouco antes de mudar a imagem
+            setIndexSelected(index);
+            setSkinSelected(number);
+            setImgClass("fade-in");  // remova a classe "fade-out" após mudar a imagem
+        }, 200);
     }
 
     function handleRead() {
@@ -124,8 +128,8 @@ export function ChampionSelected() {
                             ))}
                         </Carrosel>
 
-                        <SkinSelected>
-                            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skinSelected}.jpg`} alt="" />
+                        <SkinSelected >
+                            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skinSelected}.jpg`}  className={`${imgClass}`} alt="" />
                             <span>{skins[indexSelected].name === 'default' ? champion.name : skins[indexSelected].name}</span>
 
                         </SkinSelected>

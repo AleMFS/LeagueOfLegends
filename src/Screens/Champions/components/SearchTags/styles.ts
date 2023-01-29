@@ -9,6 +9,7 @@ export const TagsContainer = styled.div`
     justify-content: center;
     margin-top: 1rem;
     
+    
 
     label{
             background: #006680;
@@ -17,6 +18,7 @@ export const TagsContainer = styled.div`
             border-radius: 6px;
             padding: 0.75rem;
             font-size: 0.75rem;
+            cursor: pointer;
 
             input[type="radio"] {
             display: none;

@@ -187,6 +187,8 @@ export const Skins = styled.div`
         display: grid;
         grid-template-columns: 12.5rem auto;
         gap: 0.5rem;
+
+        transition: all 1s ease-out;
         
         img{
            width: 12.5rem ;
@@ -197,6 +199,14 @@ export const Skins = styled.div`
             flex-direction: column-reverse;
            
         }
+
+        .fade-out {
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        }
+        .fade-in {
+            opacity: 1;
+            }
     `
 
 export const Carrosel = styled.div`
@@ -221,7 +231,7 @@ export const Carrosel = styled.div`
         background: transparent;
         border: none;
         transition: all 1s;
-        cursor: pointer;
+        cursor: grab;
 
         :hover{
             scale: calc(1.02);

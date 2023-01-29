@@ -36,7 +36,7 @@ export const HeaderContainer = styled.header`
     height: 100%;
 
     object-fit: cover;
-    object-position: 100% 50%;
+    object-position: 90% 50%;
 }
 .mobile{
     display: none;
@@ -66,13 +66,19 @@ export const HeaderContainer = styled.header`
     .mobile{
         display: flex;
     }
+    .logo{
+        left: 50%;
+        transform: translate(-50%);
+    }
+   
 }
 
 
       
 `
 
-export const Search = styled.input`
+
+export const Search = styled.div`
     position: sticky;
     top: 0;
     left: 0;
@@ -81,24 +87,44 @@ export const Search = styled.input`
     min-width: 50%;
     margin:2rem auto;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
     background-color: #006680;
     border: none;
-    padding: 1rem 2rem;
+    padding: 0 1rem;
     border-radius: 10px;
     color: #FFF;
 
-    &::placeholder{
+    input{
+        padding: 1rem;
+        border-radius: 10px;
+        flex: 1;
+        border: 0;
+        background: transparent;
         color: #FFF;
-    }
-    :focus{
-      outline:  0;
-      box-shadow: 3px 3px 10px #005A82, 0px 0px 10px #0AC8B9;
+
+        &::placeholder{
+        color: #FFF;
+    }   
+      
     :focus::-webkit-input-placeholder {
-   color: transparent;
-}
+        color: transparent;
+    }
+
+    svg{
+        font-size: 22px;
+    }
 
 };
     
+   
+    @media (max-width:600px){
+        svg{
+            font-size: 10px;
+        }
+    }
 
 `
 

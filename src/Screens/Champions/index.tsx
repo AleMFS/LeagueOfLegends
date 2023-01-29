@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { ChampionCard } from "./components/ChampionCard";
 import TristanaV from '../../assets/Tristana.webm'
-import TristanaMob from '../../assets/TristanaMobile.gif'
+import TristanaMob from '../../assets/Mobile.png'
 import LOL from '../../assets/LOL.png'
 import axios from 'axios';
 
 import { ChampionsContainer, ChampionsContent, HeaderContainer, Search } from "./styles";
 import { version } from "../../libs/axios";
 import { SearchTags } from "./components/SearchTags";
+import { MagnifyingGlass } from 'phosphor-react'
 
 
 interface Champion {
@@ -112,19 +113,22 @@ export function Champions() {
 
     return (
         <ChampionsContainer>
-            <HeaderContainer>                
-                <video src={TristanaV} autoPlay loop muted > </video> 
+            <HeaderContainer>
+                <video src={TristanaV} autoPlay loop muted > </video>
                 <img src={TristanaMob} alt="" className="mobile" />
-                <img src={LOL} alt=""  className="logo"/>
+                <img src={LOL} alt="" className="logo" />
             </HeaderContainer>
-            <SearchTags search={handlesearchTags} />           
-            <Search
-                type="text"
-                placeholder={`Busque aqui seu campeão `}
-                value={searchChampion}
-                onChange={e => handlesearchChampion(e.target.value)}
+            <SearchTags search={handlesearchTags} />
+            <Search >
+                <input
+                    type="text"
+                    placeholder={`Busque aqui seu campeão `}
+                    value={searchChampion}
+                    onChange={e => handlesearchChampion(e.target.value)}
+                />
+                <MagnifyingGlass size={22} color="#ffffff" weight="bold" />
+            </Search>
 
-            />
 
             <ChampionsContent>
                 {(championsTag.length > 0 ? (searchChampion === '' ? championsTag : allChampions) : (searchChampion === '' ? champion : allChampions))

@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7rem 0 2rem;
+    margin: 5rem 0 2rem;
     gap: 1rem;
 
     img{
