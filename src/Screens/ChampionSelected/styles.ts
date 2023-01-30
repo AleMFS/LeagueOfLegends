@@ -65,7 +65,7 @@ export const ImageChamp = styled.div`
        @media (max-width:700px){
         img{
             max-width: 80%;
-            height: 60%;
+            height: 49%;
         }
        }
        @media (max-width:500px){

@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0 2rem;
+    margin: 5rem auto 1rem;
     gap: 1rem;
 
     img{
@@ -13,6 +14,9 @@ export const FooterContainer = styled.footer`
         filter: invert(1);
     }
 
+    p{
+        text-align: center;
+    }
     a{
         color: #fff;
         text-decoration: none;
