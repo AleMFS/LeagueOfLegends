@@ -8,7 +8,8 @@ export function Footer() {
             </a>
             <p>ProjectLOL não é endossado pela Riot Games e não reflete as visões ou opiniões da Riot Games ou de qualquer pessoa oficialmente envolvida na produção ou gerenciamento das propriedades da Riot Games. Riot Games e todas as propriedades associadas são marcas comerciais ou marcas registradas da Riot Games, Inc.</p>
             <p>Projeto feito para fins de estudo e não será de uso comercial </p>
-            <br />
+            <br/>
+            
             <span>Desenvolvido por <a href="https://www.linkedin.com/in/alexandremfs/" target='_blank'>Alexandre Santos</a></span>
 
         </FooterContainer>
