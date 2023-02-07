@@ -9,6 +9,8 @@ import { ChampionsContainer, ChampionsContent, HeaderContainer, Search } from ".
 import { version } from "../../libs/axios";
 import { SearchTags } from "./components/SearchTags";
 import { MagnifyingGlass } from 'phosphor-react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 interface Champion {
@@ -104,10 +106,10 @@ export function Champions() {
         setChampion(sortedChampions)
     }
 
-
+    AOS.init();
 
     useEffect(() => {
-
+        
         fetchChampions()
     }, [])
 
@@ -134,7 +136,7 @@ export function Champions() {
                 {(championsTag.length > 0 ? (searchChampion === '' ? championsTag : allChampions) : (searchChampion === '' ? champion : allChampions))
                     .filter(card => card.id)
                     .map((card: Champion) => (
-                        <ChampionCard key={card.id} champion={card.id} name={card.name} />
+                        <ChampionCard key={card.id}   champion={card.id} name={card.name} />
                     ))}
 
 

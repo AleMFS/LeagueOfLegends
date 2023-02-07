@@ -5,6 +5,7 @@ export const ChampionSelectedContainer = styled.section`
         flex-direction: column;
         
        
+
         
     `
 
@@ -130,6 +131,7 @@ export const Lore = styled.section`
         border-radius: 10px;
         margin-top: 2rem;
        
+        
 
 
         .loreInfo{
