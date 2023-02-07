@@ -9,8 +9,7 @@ import { ChampionsContainer, ChampionsContent, HeaderContainer, Search } from ".
 import { version } from "../../libs/axios";
 import { SearchTags } from "./components/SearchTags";
 import { MagnifyingGlass } from 'phosphor-react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 interface Champion {
@@ -106,7 +105,7 @@ export function Champions() {
         setChampion(sortedChampions)
     }
 
-    AOS.init();
+  
 
     useEffect(() => {
         

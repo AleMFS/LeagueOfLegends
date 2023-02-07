@@ -12,7 +12,7 @@ export function ChampionCard({ champion,name }: ChampionProps) {
 
 
     return (
-        <ChampionCardContainer  data-aos="zoom-out-right" data-aos-duration="500">
+        <ChampionCardContainer>
             <NavLink to={`/${champion}`} >
                 <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion}_0.jpg`} alt="" />
                 <div>
