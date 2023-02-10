@@ -129,6 +129,7 @@ export function Champions() {
                 />
                 <MagnifyingGlass size={22} color="#ffffff" weight="bold" />
             </Search>
+            
 
 
             <ChampionsContent>
