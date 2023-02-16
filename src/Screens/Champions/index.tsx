@@ -141,7 +141,6 @@ export function Champions() {
 
 
             </ChampionsContent>
-
         </ChampionsContainer>
     )
 }
